@@ -1,0 +1,89 @@
+.container {
+
+    width: 400px;
+    height: 400px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    position: absolute;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43389f+0,2989d8+50,207cca+51,4ec6ca+100 */
+    background: #43389f; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #43389f 0%, #4ec6ca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #43389f 0%,#4ec6ca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #43389f 0%,#4ec6ca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389f', endColorstr='#4ec6ca',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.numbers{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+
+.big-letters {
+    font-weight: 700;
+    font-size: 4.5em;
+    margin-top:-6px;
+}
+
+.small-letters {
+    font-weight: 300;
+    font-size:1.48em;
+    line-height: 30px;
+    margin-top: -10px;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+}
+
+.one-one{
+    position: absolute;
+    background: #fff;
+    height: 35px;
+    width: 19px;
+    transform: rotate(48deg);
+    border-radius: 3px;
+}
+
+.one-two{
+    border-right: 24px solid #fff;
+    position: absolute;
+    left: 13px;
+    border-radius: 2px;
+    height: 100px;
+    z-index: 4;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zero {
+    position: absolute;
+    top: 0;
+    border: 24px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zero-one {
+    z-index: 2;
+    right: 70px;
+}
+
+.zero-two {
+    z-index: 1;
+    right: -6px;
+}
+
+
