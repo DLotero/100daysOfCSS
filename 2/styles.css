@@ -1,0 +1,139 @@
+
+.frame {
+
+    width: 400px;
+    height: 400px;
+    background-color: #3FAF82;
+    position: relative;
+}
+
+.frame__block-center {
+    position: absolute;
+    top:50%;
+    right:30%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.frame__line {
+    width: 80px;
+    height: 9px;
+    margin: 10px 0px 10px 0px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.frame__line_moved-up {
+    animation: move-up 0.7s ease-in;
+    animation-fill-mode: forwards;    
+}
+
+.frame__line_moved-up-reverse{
+    animation: move-up-reverse 0.7s ease-in;
+    animation-fill-mode: forwards;  
+}
+
+.frame__line_no-opacity {
+    animation: disappear 0.7s ease-in;
+    animation-fill-mode: forwards;  
+}
+
+.frame__line_no-opacity-reverse {
+    animation: disappear-reverse 0.7s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.frame__line_moved-down {
+    animation: move-down 0.7s ease-in;
+    animation-fill-mode: forwards;    
+}
+
+.frame__line_moved-down-reverse {
+    animation: move-down-reverse 0.7s ease-in;
+    animation-fill-mode: forwards;  
+}
+
+.frame__line_no-animation {
+    animation: none !important;
+}
+
+@keyframes move-down {
+    0% {
+        transform: translate(0px) ;
+    }
+
+    50% {
+        transform: translateY(19px);
+    }
+
+    100% {
+        transform: translateY(19px)  rotate(45deg);
+    }
+}
+
+@keyframes move-down-reverse {
+    0% {
+        transform: translateY(19px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(19px) rotate(0deg);
+    }
+
+    100% {
+    }
+}
+
+@keyframes move-up-reverse {
+    0% {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+
+    50% {
+        transform: translateY(-19px) rotate(0deg);
+    }
+
+    100% {
+
+    }
+}
+
+@keyframes move-up {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translateY(-19px);
+    }
+
+    100% {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+}
+
+@keyframes disappear {
+    0%{}
+
+    50%{ 
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes disappear-reverse {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
