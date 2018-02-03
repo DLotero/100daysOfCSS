@@ -1,0 +1,86 @@
+.frame {
+
+    background-color: #272C34;
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+}
+
+.frame__content-center {
+    position: absolute;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width:200px;
+    height:200px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.frame__content-sky {
+    
+    background: #7DDFFC;
+    height:135px;
+
+}
+
+.frame__content-sun {
+
+    width:34px;
+    height: 34px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    left: -20px;
+
+    background-color: #FFEF00;
+}
+
+.frame__content-piramid-left {
+
+    position: absolute;
+    top: 78px;
+    left: 51px;
+
+    height: 57px;
+    width: 100px;
+
+    background-color: #F4F4F4;
+    clip-path: polygon(50% 0, 0 100%, 70% 100%);
+}
+
+.frame__content-piramid-right {
+    
+    position: absolute;
+    top: 78px;
+    left: 51px;
+
+    height: 57px;
+    width: 100px;
+    
+    background-color:#DDDADA;
+    clip-path: polygon(50% 0, 70% 100%, 100% 100%);
+}
+
+.frame__content-shadow {
+
+    position:absolute;
+    left:51px;
+
+    height: 50px;
+    width:149px;
+
+    clip-path: polygon(100% 10%, 0% 0, 100% 0%);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.frame__content-sand {
+    height: 67px;
+    background: #F0DE75;
+}
+
