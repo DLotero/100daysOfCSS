@@ -82,13 +82,13 @@
 .frame__content-shadow {
 
     position:absolute;
-    left:51px;
-
     height: 50px;
-    width:149px;
+    width:300px;
 
-    clip-path: polygon(100% 10%, 0% 0, 100% 0%);
+    clip-path: polygon(100% 25%, 17% 0, 50% -10%);
     background: rgba(0, 0, 0, 0.2);
+
+    animation: shadow-movement 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
 
 .frame__content-sand {
@@ -114,3 +114,9 @@
     70%{ background-color:#DDDADA;}
 }
 
+@keyframes shadow-movement {
+    0% {}
+    30% {clip-path: polygon(100% 90%, 17% 0%, 50% 0%);}
+    90%{ clip-path: polygon(-15% 17%, 17% 0%, 51% 0%);}
+
+}
