@@ -36,14 +36,8 @@
     left: 50px;
     box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
 
-    animation: shrink 3s ease-in 3s infinite;
+    animation: shrink-outer 2s cubic-bezier(0.21, 0.98, 0.6, 0.99)  infinite alternate;
 
-}
-
-@keyframes shrink {
-    0%{}
-    50%{ transform: scale(0);}
-    100%{ transform:scale(1);}
 }
 
 .frame__middle-circle {
@@ -54,7 +48,7 @@
     top: 64px;
     box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.3);
 
-    animation: shrink 3s ease-in 1.5s infinite;
+    animation: shrink-middle 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
 
 }
 
@@ -66,5 +60,20 @@
     left: 79px;
     
     box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.3);
-    animation: shrink 3s ease-in infinite;
+    animation: shrink-inner 2s cubic-bezier(0.21, 0.98, 0.6, 0.99)  infinite alternate;
+}
+
+@keyframes shrink-inner {
+    0%, 70%{ transform: scale(0);}
+    100%{ transform:scale(1);}
+}
+
+@keyframes shrink-middle {
+    0%, 40% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shrink-outer {
+    0%, 10% { transform: scale(0);}
+    100% { transform:scale(1);}
 }
