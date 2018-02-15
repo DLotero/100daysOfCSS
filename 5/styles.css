@@ -1,0 +1,38 @@
+.frame {
+
+    width: 400px;
+    height: 400px;
+
+    background-color: #42A7A1;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame__report {
+
+    width: 70%;
+    height: 55%;
+
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.frame__report-header {
+    height: 28%;
+}
+
+.frame__report-graph {
+    height: 50%;
+}
+
+.frame__report-footer {
+    height: 17%;
+}
