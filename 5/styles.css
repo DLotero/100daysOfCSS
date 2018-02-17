@@ -79,3 +79,38 @@ body{
 .frame__report-footer {
     height: 17%;
 }
+
+.frame__report-graph {
+
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.frame__report-graph-labels {
+
+    padding: 10px 0 14px 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.frame__label {
+    padding: 0 10px 0 25px;
+}
+
+.frame__label_red::before {
+    content: ' ' ;
+    width: 11px;
+    height: 3px;
+    background: #FA7373;
+    border-radius: 3px;
+}
+
+.frame__label_size_9 {
+    font-size: 9px;
+}
+
+.frame__label_grey {
+    color:#606060;
+}
